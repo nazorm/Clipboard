@@ -1,0 +1,223 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    text-align: center;
+    width: 100%;
+}
+.desktopheader, .ol{
+    display: none;
+}
+.mobileheader{
+    width: 100%;
+}
+.computer, .devices{
+    width: 80%;
+}
+.header{
+    position: relative;
+}
+.headerlogo{
+position: absolute;
+top: 20%;
+right: 35%;
+width: 30%;
+}
+h1{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 0 20px;
+    color: hsl(210, 10%, 33%);
+}
+h2, h3{
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+    padding: 0 20px;
+}
+p{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 400; 
+    color: hsl(201, 11%, 66%);
+    line-height: 180%;
+    font-size: 16px;
+    padding: 0 20px;
+
+}
+.header p{
+    padding: 0 18px;
+    margin: 0 0 10%;
+}
+button{
+    padding: 15px 40px;
+    font-size: 16px;
+    color: white;
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-color: hsl(171, 66%, 44%);
+    border: transparent;
+    border-radius: 25px;
+}
+.mac{
+    margin-top: 5%;
+   background-color: hsl(233, 100%, 69%);
+}
+.desktopflex, .access, .sponsor{
+    margin-top: 20%;
+}
+.sponsor img{
+    margin-bottom: 15%;
+}
+.downloadcta{
+    padding-bottom: 25%;
+}
+.footer{
+    background-color: whitesmoke;
+    padding-top: 25%;
+}
+.footerLogo{
+    width: 15%;
+}
+.ul li, .ul a{
+    list-style: none;
+    text-decoration: none;
+    line-height: 200%;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 400; 
+    color: hsl(201, 11%, 66%);
+    font-size: 16px;
+    margin-top: 5%;
+}
+.footer .icon{
+    padding: 10% 0;
+}
+/*Desktop Styles*/
+@media only screen and (min-width:960px){
+
+.desktopheader{
+    display: inline;
+    width: 100%;
+}
+.mobileheader, .ul{
+    display: none;
+}
+.headerlogo{
+    position: absolute;
+    top: 20%;
+    right: 45%;
+    width: 10%;
+    }
+    .computer, .devices{
+        width: 40%;
+    }
+    h1{
+        font-size: 60px;
+        margin-bottom: 2%;
+    }
+    p{
+        font-size: 20px;
+    }
+.header p{
+    padding: 0 25%;
+    margin-bottom: 5%;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 0 36%;
+    margin-bottom: 5%;
+    
+}
+.ios:hover, .mac:hover{
+    cursor: pointer;
+}
+.ios, .mac{
+    align-self: center;
+    margin: 0;
+}
+h2{
+    font-size: 35px;
+    margin-bottom: 2%;
+}
+.trackSection p, .access p, .downloadcta p{
+    padding: 0 28%;
+}
+.desktopflex{
+    display: flex;
+    margin: 3% 0;
+    padding: 0 5% 0 0;
+    justify-content: space-between;
+}
+.tracks{
+    align-self: center;
+}
+.desktopflex p {
+padding: 0 30% 0 0;
+text-align: start;
+font-size: 20px;
+margin-bottom: 3%;
+}
+.track h3{
+    align-self: center;
+    text-align: start;  
+    padding: 0;
+}
+.access, .devices, .downloadcta{
+    margin-top: 3%;
+}
+.accesses{
+    display: flex;  
+    justify-content: space-between;
+}
+.accesses p{
+    padding: 0 10%;
+}
+.sponsor{
+    margin: 5% 0 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.sponsor img{
+    margin-bottom: 5%;
+}
+.downloadcta .btn{
+    margin: 3% 0;
+}
+.downloadcta, .footer {
+    padding: 0;
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footerLogo{
+    width: 5%;
+    align-self: center;
+}
+.ol{
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    align-self: center;
+}
+.ol li, .ol a{
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 10%;
+    text-align: start;
+    color: hsl(201, 11%, 66%);
+    font-family: 'Bai Jamjuree', sans-serif;
+
+}
+.ol li:hover{
+    color: hsl(210, 10%, 33%);
+    cursor: pointer;
+}
+.icon{
+   margin: 0;
+   padding: 0;
+}
+}
